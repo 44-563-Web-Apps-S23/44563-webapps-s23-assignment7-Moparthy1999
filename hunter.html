@@ -38,51 +38,247 @@
     <p>Click on the bushes to search for the mouse, beware the cat</p>
 		<div class="flex-container">
 		  <div id="bushes">Number of bushes checked is zero</div>   
-		  <div id="penalty">Penalty is zero</div>  
-		  <div>Click for help</div> 
+		  <div id="Penalty">Penalty is zero</div>  
+		  <div onclick="help()">Click for help</div> 
           <div id="help">Help report</div> 
 		</div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img1" onclick="check(0)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img2" onclick="check(1)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img3" onclick="check(2)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img4" onclick="check(3)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img5" onclick="check(4)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img6" onclick="check(5)"></div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img7" onclick="check(6)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img8" onclick="check(7)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img9" onclick="check(8)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img10" onclick="check(9)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img11" onclick="check(10)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"id="img12" onclick="check(11)"></div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img13" onclick="check(12)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img14" onclick="check(13)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img15" onclick="check(14)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img16" onclick="check(15)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img17" onclick="check(16)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img18" onclick="check(17)"></div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
-                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img19" onclick="check(18)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img20" onclick="check(19)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img21" onclick="check(20)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img22" onclick="check(21)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img23" onclick="check(22)"></div>
+                <div class="col-sm-2"><img src="bush.jpg" height="100" width="100" id="img24" onclick="check(23)"></div>
             </div>
         </div>
+        <script>
+            let ids=["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10", "img11", "img12", "img13", "img14", "img15", "img16", "img17", "img18", "img19", "img20", "img21", "img22", "img23", "img24"]
+            var checkCount=0
+            var penalty=0
+            var lastCheck=0
+            var mouseLocation=13
+            var catLocation=21
+            var gameOver=false
+            var position = lastCheck
+            function check(position){
+               if(gameOver==true){
 
+               } 
+               else{
+                if(position==21){
+                  document.getElementById(ids[position]).src="Cat.jpg"
+                  gameOver=true
+                  penalty+=4
+                }
+                else if(position==13){
+                  document.getElementById(ids[position]).src="Mouse.jpg"
+                  gameOver=true
+                  penalty-=3
+                }
+                else{
+                  document.getElementById(ids[position]).src="Grass.png"
+                  checkCount+=1
+                  penalty+=1
+                }
+                lastCheck=position
+               }
+               bushes.innerHTML="Number of bushes checked is "+checkCount
+               Penalty.innerHTML="Penalty is "+penalty
+            }
+            let col1=0
+            let row1=0
+            let col2=0
+            let row2=0
+            let col3=0
+            let row3=0
+            function help(){
+              console.log(lastCheck);
+              col1=13%6
+              col1=col1+1
+              row1=Math.round(13/4)
+              row2=Math.round(lastCheck/4)
+              col2=lastCheck%6
+              if(row2==0){
+                row2+=1
+                col2+=1
+              }else if(row2==5){
+                row2-=1
+              }else if(row2==6){
+                row2-=2
+              }else{
+                if((row2==3 && col2==0) || (row2==4 && col2==0)){
+                  col2+=1
+                }
+              }
+              if(col2==0 || col2==4 || col2==5){
+                col2+=1
+              }
+              else if(row2==4 && col2==3){
+                    row2=row2-1;
+                    col2=col2+1;
+            }
+            else if(row2==2 && col2==3){
+                    
+                    col2=col2+1;
+                }
+            col3=21%6;
+            row3=Math.round(21/4);
+            
+            row3=row3-1;
+            col3=col3+1;
+            if((row1==row2)){
+                if(col1>col2){
+                    if(col2+1==col1){
+                      penalty=penalty+2;
+                        document.getElementById("help").innerHTML="squeek";
+                    }
+                    else{
+                        console.log("else in first compare");
+                         document.getElementById("help").innerHTML="sorry, no help available";
+                         }
+
+                }
+                else{
+                    console.log("entered the else part");
+                    if(col2-1==col1){
+                      penalty=penalty+2;
+                        document.getElementById("help").innerHTML="squeek";
+                    }
+                    else if(col2==col3){
+                      penalty=penalty+2;
+                        document.getElementById("help").innerHTML="Meow";
+    
+                    }
+                    else{
+                        console.log("else");
+                        document.getElementById("help").innerHTML="sorry, no help available";
+
+                         }
+                }
+            }
+            else if((col1==col2)){
+                if(row1>row2){
+                    if(row2+1==row1){
+                      penalty=penalty+2;
+                        document.getElementById("help").innerHTML="squeek";
+                    }
+                    else{
+                    console.log("else");
+                    document.getElementById("help").innerHTML="sorry, no help available";
+            }
+
+                }
+                else{
+                    if(row2-1==row1){
+                      penalty=penalty+2;
+                        document.getElementById("help").innerHTML="squeek";
+                    }
+                    else{
+                        document.getElementById("help").innerHTML="sorry, no help available";
+                     }
+                } 
+            }
+            else if(row2-1==row1||row2+1==row1){
+                if((col2+1==col1||col2-1==col1)&&(col2<=3)){
+                    penalty=penalty+2;
+                    document.getElementById("help").innerHTML="squeek";
+                }
+                else if((col2+1==col3||col2-1==col3)&&(col2>3)){
+                    penalty=penalty+2;
+                    document.getElementById("help").innerHTML="Meow";
+                }
+                else{
+                    document.getElementById("help").innerHTML="sorry, no help available";
+                     }
+            }
+            else if((row3==row2)){
+                if(col3>col2){
+                    if(col2+1==col3){
+                      penalty=penalty+2;
+                      document.getElementById("help").innerHTML="Meow";
+                    }
+                    else{
+                        document.getElementById("help").innerHTML="sorry, no help available";
+                        }
+
+                }
+                else{
+                    if(col2-1==col3){
+                      penalty=penalty+2;
+                      document.getElementById("help").innerHTML="Meow";
+                    }
+                    else{
+                        console.log("else");
+                        document.getElementById("help").innerHTML="sorry, no help available";
+                     }
+
+                }
+            }
+            else if((col3==col2)){
+                if(row3>row2){
+                    if(row2+1==row3){
+                      penalty=penalty+2;
+                        document.getElementById("help").innerHTML="Meow";
+                    }
+                    else{
+                    document.getElementById("help").innerHTML="sorry, no help available";
+                     }
+
+                }
+                else{
+                    if(row2-1==row3){
+                      penalty=penalty+2;
+                        document.getElementById("help").innerHTML="Meow";
+                    }
+                    else{
+                    document.getElementById("help").innerHTML="sorry, no help available";
+                }
+                } 
+            }
+            else if(row2-1==row3||row2+1==row3){
+                if((col2+1==col3||col2-1==col3)&&(col2>3)){
+                  penalty=penalty+2;
+                  document.getElementById("help").innerHTML="Meow";
+                }
+            }
+            else{
+                document.getElementById("help").innerHTML="sorry, no help available";
+            }
+            Penalty.innerHTML="Penalty is "+penalty;
+            }
+            
+          </script>
 
         
 </body>
